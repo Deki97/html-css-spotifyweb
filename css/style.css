@@ -8,3 +8,57 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.app-wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: darkgoldenrod;
+    overflow: hidden;
+}
+
+.upgrade-bar {
+    height: 100px;
+    width: calc(100% - 250px);
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    /* test */
+    background-color: forestgreen;
+}
+
+.col {
+    float: left;
+}
+
+.main-nav {
+    height: 100%;
+    width: 250px;
+    
+    /* test */
+    background-color: darksalmon;
+}
+
+.main-content {
+    height: 100%;
+    width: calc(100% - 250px);
+    overflow: hidden;
+    padding-top: 100px;
+}
+/* END MAIN */
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: darkslategray;
+    overflow: hidden;
+}
+/* END FOOTER */
