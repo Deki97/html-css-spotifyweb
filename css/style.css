@@ -18,8 +18,7 @@ body {
 main {
     width: 100%;
     height: calc(100% - 100px);
-    background-color: darkgoldenrod;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .upgrade-bar {
@@ -28,9 +27,21 @@ main {
     position: fixed;
     top: 0;
     right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-    /* test */
-    background-color: forestgreen;
+.btn-upgrade {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 14px 36px;
+    border-radius: 24px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
 }
 
 .col {
@@ -48,8 +59,8 @@ main {
 .main-content {
     height: 100%;
     width: calc(100% - 250px);
-    overflow: hidden;
     padding-top: 100px;
+    background-color: #00091a;
 }
 /* END MAIN */
 
