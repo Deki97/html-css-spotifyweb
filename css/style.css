@@ -54,6 +54,7 @@ main {
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .btn-upgrade {
@@ -87,7 +88,7 @@ main {
 
 .nav-logo {
     height: 80px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .logo {
@@ -154,12 +155,57 @@ main {
 
 .nav-playlist ul li {
     line-height: 30px;
+    overflow-y: auto;
+    height: 100%;
 }
 
 .nav-playlist a {
     text-decoration: none;
     color: grey;
     font-size: 13px;
+    font-weight: bold;
+}
+
+.download-logo {
+    width: 20px;
+}
+
+.nav-user {
+    height: 70px;
+}
+
+.install {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.install a {
+    color: grey;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.user-logo {
+    width: 24px;
+    background-color: grey;
+}
+
+hr {
+    border: 0.5px solid gray;
+}
+
+.John-Doe {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-name {
+    padding-left: 8px;
+    font-size: 14px;
     font-weight: bold;
 }
 /* END MAIN NAV */
