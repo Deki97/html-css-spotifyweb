@@ -32,7 +32,15 @@ img {
 }
 
 .main-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 85%;
+    margin: auto;
+}
+
+.footer-wrapper {
+    width: 98%;
     margin: auto;
 }
 
@@ -40,6 +48,13 @@ img {
     border-radius: 50%;
 }
 
+.m-10 {
+    margin: 0 10px;
+}
+
+.m-20 {
+    margin: 0 20px;
+}
 /* MAIN */
 main {
     width: 100%;
@@ -87,7 +102,6 @@ main {
 }
 
 .nav-logo {
-    height: 80px;
     padding-top: 20px;
 }
 
@@ -96,7 +110,7 @@ main {
 }
 
 .nav-actions {
-    height: 100px;
+    margin-top: 15px;
 }
 
 .nav-actions ul {
@@ -122,6 +136,7 @@ main {
 }
 
 .nav-playlist {
+    flex-grow: 1;
     margin-top: 20px;
 }
 
@@ -151,12 +166,11 @@ main {
 .nav-playlist ul {
     list-style-type: none;
     margin-top: 15px;
+    overflow-y: auto;
 }
 
 .nav-playlist ul li {
     line-height: 30px;
-    overflow-y: auto;
-    height: 100%;
 }
 
 .nav-playlist a {
@@ -168,10 +182,6 @@ main {
 
 .download-logo {
     width: 20px;
-}
-
-.nav-user {
-    height: 70px;
 }
 
 .install {
@@ -323,7 +333,96 @@ hr {
 footer {
     width: 100%;
     height: 80px;
-    background-color: darkslategray;
+    background-color: #262626;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song-playing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.song-playing-left {
+    display: flex;
+    align-items: center;
+}
+
+.song-playing-right {
+    display: flex;
+    align-items: center;
+}
+
+.song-control {
+    width: 60%;
+}
+
+.song-volume {
+    width: 20%;
+}
+
+.song-image {
+    width: 50px;
+}
+
+.song-name .author {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.song-name .name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.song-control-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.song-control-top > div {
+    font-size: 16px;
+}
+
+.song-control-top .play-icon {
+    font-size: 30px;
+}
+
+.song-control-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.duration {
+    width: 50%;
+    height: 5px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.duration-listened {
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+}
+.listened, .remained {
+    font-size: 12px;
+}
+
+.song-volume {
+    display: flex;
+    align-items: center;
+}
+
+.song-volume i {
+    font-size: 12px;
 }
 /* END FOOTER */
