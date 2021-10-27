@@ -9,20 +9,41 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 .app-wrapper {
     height: 100vh;
     width: 100%;
 }
 
+.white {
+    color: white;
+}
+
+.grey {
+    color: grey;
+}
+
+.main-content-wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+.radius {
+    border-radius: 50%;
+}
+
 /* MAIN */
 main {
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     overflow-y: auto;
 }
 
 .upgrade-bar {
-    height: 100px;
+    height: 80px;
     width: calc(100% - 250px);
     position: fixed;
     top: 0;
@@ -40,7 +61,7 @@ main {
     padding: 14px 36px;
     border-radius: 24px;
     position: absolute;
-    top: 25px;
+    top: 15px;
     right: 20px;
 }
 
@@ -63,14 +84,16 @@ main {
 .main-content {
     height: 100%;
     width: calc(100% - 250px);
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: #00091a;
+    overflow-y: auto;
 }
 
 .main-content-menu ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-content-menu {
@@ -80,7 +103,7 @@ main {
 .main-content-menu a {
     color: grey;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     margin: 5px 10px;
     font-weight: bold;
 }
@@ -88,13 +111,80 @@ main {
 .main-content-menu a:hover {
     color: white;
 }
+
+.section-title {
+    margin-top: 40px;
+}
+
+.section-title h2 {
+    font-size: 20px;
+}
+.section-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.section-item {
+    width: calc(100% / 6 - 10px);
+    margin: 0 5px;
+}
+
+.item-image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.item-image:hover .overlay {
+    opacity: 0.5;
+}
+
+.item-icon {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+}
+
+.item-image:hover .item-icon {
+    display: block;
+}
+
+.item-image:hover {
+    cursor: pointer;
+}
+
+.item-description {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.item-title h3 {
+    font-size: 14px;
+}
+
+.item-subtitle h4 {
+    font-size: 10px;
+    margin-top: 10px;
+}
 /* END MAIN */
 
 
 /* FOOTER */
 footer {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: darkslategray;
     overflow: hidden;
 }
