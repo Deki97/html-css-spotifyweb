@@ -99,6 +99,7 @@ main {
     height: 100%;
     width: 250px;
     background-color: black;
+    overflow-y: auto;
 }
 
 .nav-logo {
@@ -121,6 +122,10 @@ main {
     display: flex;
     align-items: center;
     padding: 5px 0;
+}
+
+.nav-actions ul li a:hover {
+    color: white;
 }
 
 .nav-actions-logo {
@@ -151,6 +156,11 @@ main {
     margin-top: 10px;
 }
 
+.create-playlist:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .create-logo {
     background-color: grey;
     font-size: 30px;
@@ -163,6 +173,10 @@ main {
     padding-left: 8px;
 }
 
+.create-text:hover {
+    color: white;
+    cursor: pointer;
+}
 .nav-playlist ul {
     list-style-type: none;
     margin-top: 15px;
@@ -171,6 +185,10 @@ main {
 
 .nav-playlist ul li {
     line-height: 30px;
+}
+
+.nav-playlist ul li a:hover {
+    color: white;
 }
 
 .nav-playlist a {
@@ -196,6 +214,10 @@ main {
     font-size: 13px;
     font-weight: bold;
     padding-left: 8px;
+}
+
+.install a:hover {
+    color: white;
 }
 
 .user-logo {
@@ -343,7 +365,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 20%;
 }
 
 .song-playing-left {
@@ -354,6 +375,13 @@ footer {
 .song-playing-right {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.song-like:hover, .song-save:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .song-control {
@@ -361,7 +389,8 @@ footer {
 }
 
 .song-volume {
-    width: 20%;
+    display: flex;
+    align-items: center;
 }
 
 .song-image {
@@ -376,6 +405,12 @@ footer {
 .song-name .name {
     font-size: 12px;
     font-weight: bold;
+}
+
+.song-name .name:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
 .song-control-top {
@@ -393,6 +428,11 @@ footer {
     font-size: 30px;
 }
 
+.song-control-top .play-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .song-control-bottom {
     display: flex;
     align-items: center;
@@ -407,6 +447,23 @@ footer {
     border-radius: 10px;
 }
 
+.duration-small {
+    width: 100px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.duration:hover .duration-listened {
+    background-color: #ccff00;
+    cursor: pointer;
+}
+
+.duration-small:hover .duration-listened {
+    background-color: #ccff00;
+    cursor: pointer;
+}
+
 .duration-listened {
     height: 100%;
     width: 20%;
@@ -415,11 +472,6 @@ footer {
 }
 .listened, .remained {
     font-size: 12px;
-}
-
-.song-volume {
-    display: flex;
-    align-items: center;
 }
 
 .song-volume i {
