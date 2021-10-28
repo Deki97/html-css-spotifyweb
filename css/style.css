@@ -259,7 +259,6 @@ hr {
     width: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     height: 100%;
     background-color: black;
@@ -268,17 +267,17 @@ hr {
 }
 
 .top-mobile div {
-    width: 30px;
-    margin: 10px 0;
+    width: 25px;
+    margin: 10px auto;
 }
 
 .bottom-mobile div {
-    width: 30px;
-    margin: 10px 0;
+    width: 25px;
+    margin: 10px auto;
 }
 
 .spotify-mobile {
-    width: 30px;
+    width: 25px;
     filter: invert(1);
 }
 /* END MAIN NAV MOBILE */
