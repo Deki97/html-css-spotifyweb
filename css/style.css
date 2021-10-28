@@ -36,6 +36,7 @@ img {
     flex-direction: column;
     width: 85%;
     margin: auto;
+    height: 100%;
 }
 
 .footer-wrapper {
