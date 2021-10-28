@@ -544,6 +544,14 @@ footer {
     border-radius: 10px;
 }
 
+/* .duration::after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+} */
+
 .duration:hover .duration-listened {
     background-color: #ccff00;
     cursor: pointer;
