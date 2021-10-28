@@ -34,7 +34,6 @@ img {
 .main-nav-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 85%;
     margin: auto;
 }
@@ -104,6 +103,7 @@ main {
 
 .nav-logo {
     padding-top: 20px;
+    flex-grow: 0;
 }
 
 .logo {
@@ -112,6 +112,7 @@ main {
 
 .nav-actions {
     margin-top: 15px;
+    flex-grow: 0;
 }
 
 .nav-actions ul {
@@ -200,6 +201,10 @@ main {
 
 .download-logo {
     width: 20px;
+}
+
+.nav-user {
+    flex-grow: 0;
 }
 
 .install {
