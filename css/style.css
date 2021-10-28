@@ -290,6 +290,7 @@ hr {
     width: 25px;
     filter: invert(1);
 }
+
 /* END MAIN NAV MOBILE */
 
 /* END MAIN NAV */
@@ -318,7 +319,10 @@ hr {
 }
 
 .border {
-    border-bottom: 2px solid #ccff00;
+    width: 30%;
+    height: 2px;
+    margin: auto;
+    background-color: yellowgreen;
 }
 
 .main-content-menu a {
