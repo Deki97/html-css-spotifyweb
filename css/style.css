@@ -252,6 +252,37 @@ hr {
     font-size: 14px;
     font-weight: bold;
 }
+
+
+/* MAIN NAV MOBILE */
+.main-nav-mobile {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    background-color: black;
+    float: left;
+    display: none;
+}
+
+.top-mobile div {
+    width: 30px;
+    margin: 10px 0;
+}
+
+.bottom-mobile div {
+    width: 30px;
+    margin: 10px 0;
+}
+
+.spotify-mobile {
+    width: 30px;
+    filter: invert(1);
+}
+/* END MAIN NAV MOBILE */
+
 /* END MAIN NAV */
 
 
@@ -372,6 +403,23 @@ hr {
 @media screen and (max-width: 700px) {
     .section-item {
         width: calc(100% / 2 - 10px);
+    }
+}
+
+/* RESPONSIVE < 600PX */
+@media screen and (max-width: 600px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .main-content {
+        width: calc(100% - 40px);
+    }
+    .main-nav-mobile {
+        display: block;
+    }
+    .upgrade-bar {
+        width: calc(100% - 40px);
     }
 }
 /* END MAIN CONTENT */
